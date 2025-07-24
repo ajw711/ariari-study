@@ -13,11 +13,11 @@ public class TestFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
 
-        log.info("→ [Filter] doFilter 호출됨");
+        //log.info("→ [Filter] doFilter 호출됨");
 
         // 다음 필터 or 컨트롤러로 요청 전달
         filterChain.doFilter(request, response);
 
-        log.info("← [Filter] 응답 후처리 수행");
+        //log.info("← [Filter] 응답 후처리 수행");
     }
 }
