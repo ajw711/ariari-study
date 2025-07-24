@@ -11,7 +11,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi v1() {
         return GroupedOpenApi.builder()
-                .group("01. V1 API")
+                .group("V1 API")
                 .packagesToScan("com.example.demo.v1.controller")
                 .build();
     }
@@ -19,7 +19,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi v2() {
         return GroupedOpenApi.builder()
-                .group("01. V2 API")
+                .group("V2 API")
                 .packagesToScan("com.example.demo.v2.controller")
                 .build();
     }
