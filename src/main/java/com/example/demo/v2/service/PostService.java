@@ -40,8 +40,8 @@ public class PostService {
 
     /**
      * new Post() 하고 setTitle, setContent 쓰는 방식은
-     * 나중에 문제가 생길 수 있어서 좋은 방법은 아니에요.
-     * 나중에 'Post.create()' 같은 방법을 쓰는 게 더 좋아요.
+     * 나중에 문제가 생길 수 있어서 좋은 방법은 아닙니다.
+     * 나중에 'Post.create()' 같은 방법을 쓰는 게 더 좋습니다.
      */
     @Transactional
     public void createPost(PostRequestDto postCreateDto) {

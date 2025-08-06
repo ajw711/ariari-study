@@ -22,7 +22,7 @@ public class CommentController {
     private final CommentService commentService;
 
     @Operation(summary = "해당 게시글에 댓글 조회", description = "")
-    @GetMapping("/{postId}") //절대로 끝 /  작성 x
+    @GetMapping("/{postId}")
     public List<CommentResponseDto> getComments(@PathVariable Long postId) {
         log.info("→ [Controller] getComments 호출됨");
         List<CommentResponseDto> list = commentService.getComments(postId);
